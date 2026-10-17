@@ -1,49 +1,44 @@
-<<<<<<< HEAD
 @page "/"
 
 <div style="background-color: #121412; color: #e0e4e0; min-height: 100vh; padding: 20px; font-family: sans-serif; text-align: center;">
     <h1 style="color: #a3c644; margin-bottom: 5px;">Т-КОНТРОЛЬ</h1>
-    <p style="color: #8f998f; font-size: 14px; margin-bottom: 20px;">Модуль конверсії • iPhone 16 Pro</p>
+    <p style="color: #8f998f; font-size: 14px; margin-bottom: 20px;">Клінічна сцена @currentScene</p>
 
-    <!-- Ваша перша картинка! -->
-    <div style="background: #2A3419; padding: 10px; border-radius: 12px; margin-bottom: 30px;">
-        <img src="Images/comic_001_golden_window.webp" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Золоте вікно" />
+    <div style="background: #2A3419; padding: 10px; border-radius: 12px; margin-bottom: 25px; max-width: 400px; margin-left: auto; margin-right: auto;">
+        <img src="@currentImage" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Сцена @currentScene" />
     </div>
 
     <p style="font-size: 18px; font-weight: bold; margin-bottom: 20px;">Що робимо з турнікетом?</p>
 
-    <!-- Тактичні кнопки замість свайпів для тесту -->
-    <div style="display: flex; gap: 15px; justify-content: center;">
-        <button style="flex: 1; padding: 18px; background-color: #991b1b; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px;">
+    <div style="display: flex; gap: 15px; justify-content: center; max-width: 400px; margin: 0 auto;">
+        <button @onclick="NextScene" style="flex: 1; padding: 18px; background-color: #991b1b; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer;">
             ЗАЛИШИТИ
         </button>
-        <button style="flex: 1; padding: 18px; background-color: #16a34a; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px;">
+        <button @onclick="NextScene" style="flex: 1; padding: 18px; background-color: #16a34a; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer;">
             КОНВЕРСІЯ
         </button>
     </div>
 </div>
-=======
-@page "/"
 
-<div style="background-color: #121412; color: #e0e4e0; min-height: 100vh; padding: 20px; font-family: sans-serif; text-align: center;">
-    <h1 style="color: #a3c644; margin-bottom: 5px;">Т-КОНТРОЛЬ</h1>
-    <p style="color: #8f998f; font-size: 14px; margin-bottom: 20px;">Модуль конверсії • iPhone 16 Pro</p>
+@code {
+    private int currentScene = 1;
+    private string currentImage = "Images/comic_001_golden_window.webp";
 
-    <!-- Ваша перша картинка! -->
-    <div style="background: #2A3419; padding: 10px; border-radius: 12px; margin-bottom: 30px;">
-        <img src="Images/comic_001_golden_window.webp" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Золоте вікно" />
-    </div>
-
-    <p style="font-size: 18px; font-weight: bold; margin-bottom: 20px;">Що робимо з турнікетом?</p>
-
-    <!-- Тактичні кнопки замість свайпів для тесту -->
-    <div style="display: flex; gap: 15px; justify-content: center;">
-        <button style="flex: 1; padding: 18px; background-color: #991b1b; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px;">
-            ЗАЛИШИТИ
-        </button>
-        <button style="flex: 1; padding: 18px; background-color: #16a34a; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px;">
-            КОНВЕРСІЯ
-        </button>
-    </div>
-</div>
->>>>>>> bef3bdf (Added UI with comic 1)
+    private void NextScene()
+    {
+        currentScene++;
+        if (currentScene == 2) {
+            currentImage = "Images/comic_002_shock_contraindication.webp";
+        }
+        else if (currentScene == 3) {
+            currentImage = "Images/comic_003_over_six_hours.webp";
+        }
+        else if (currentScene == 4) {
+            currentImage = "Images/comic_004_venous_tourniquet.webp";
+        }
+        else {
+            currentScene = 1; 
+            currentImage = "Images/comic_001_golden_window.webp"; 
+        }
+    }
+}
