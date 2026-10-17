@@ -5,18 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Т-Контроль</title>
     <base href="/t-control-app/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
     <link href="manifest.webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
 </head>
-<body style="background-color: #121412; margin: 0;">
-    <div id="app">
-        <div style="color: #a3c644; text-align: center; padding-top: 40vh; font-family: sans-serif;">
-            Завантаження Т-Контроль...
+<body style="background-color: #121412; margin: 0; padding: 20px; font-family: sans-serif; text-align: center;">
+
+    <div style="color: #e0e4e0; min-height: 100vh;">
+        <h1 style="color: #a3c644; margin-bottom: 5px;">Т-КОНТРОЛЬ</h1>
+        <p id="sceneText" style="color: #8f998f; font-size: 14px; margin-bottom: 20px;">Клінічна сцена 1</p>
+
+        <div style="background: #2A3419; padding: 10px; border-radius: 12px; margin-bottom: 25px; max-width: 400px; margin-left: auto; margin-right: auto;">
+            <img id="sceneImage" src="Images/comic_001_golden_window.webp" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Сцена" />
+        </div>
+
+        <p style="font-size: 18px; font-weight: bold; margin-bottom: 20px; color: #e0e4e0;">Що робимо з турнікетом?</p>
+
+        <div style="display: flex; gap: 15px; justify-content: center; max-width: 400px; margin: 0 auto;">
+            <button onclick="nextScene()" style="flex: 1; padding: 18px; background-color: #991b1b; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer;">
+                ЗАЛИШИТИ
+            </button>
+            <button onclick="nextScene()" style="flex: 1; padding: 18px; background-color: #16a34a; color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer;">
+                КОНВЕРСІЯ
+            </button>
         </div>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
+    <!-- Вбудований легкий "двигун" JavaScript замість C# -->
+    <script>
+        let currentScene = 1;
+        function nextScene() {
+            currentScene++;
+            let imgSource = "Images/comic_001_golden_window.webp";
+            
+            if (currentScene === 2) {
+                imgSource = "Images/comic_002_shock_contraindication.webp";
+            } else if (currentScene === 3) {
+                imgSource = "Images/comic_003_over_six_hours.webp";
+            } else if (currentScene === 4) {
+                imgSource = "Images/comic_004_venous_tourniquet.webp";
+            } else {
+                currentScene = 1;
+            }
+            
+            document.getElementById("sceneText").innerText = "Клінічна сцена " + currentScene;
+            document.getElementById("sceneImage").src = imgSource;
+        }
+    </script>
 </body>
 </html>

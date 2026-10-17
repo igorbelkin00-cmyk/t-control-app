@@ -1,13 +1,10 @@
-name: Deploy T-Control PWA to GitHub Pages
-
+name: Deploy Static PWA
 on:
   push:
     branches: [ main ]
-
 permissions:
   pages: write
   id-token: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,27 +12,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          7.0.x
-          8.0.x
-
-    - name: Publish Blazor WebAssembly
-      run: dotnet publish -c Release -o release
-
-    - name: Fix GitHub Pages hidden folders error
-      run: touch release/wwwroot/.nojekyll
-
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: 'release/wwwroot'
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v3
+      - name: Fix Jekyll
+        run: touch wwwroot/.nojekyll
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'wwwroot'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
