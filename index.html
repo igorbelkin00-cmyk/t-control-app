@@ -1,19 +1,22 @@
-@code {
-    private int currentScene = 1;
-    private string currentImage = "Images/comic_001_golden_window.webp";
-
-    private void NextScene()
-    {
-        currentScene++;
-        if (currentScene == 2) {
-            currentImage = "Images/comic_002_shock_contraindication.webp";
-        }
-        else if (currentScene == 3) {
-            currentImage = "Images/comic_003_over_six_hours.webp";
-        }
-        else {
-            currentScene = 1; 
-            currentImage = "Images/comic_001_golden_window.webp"; 
-        }
-    }
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Т-Контроль</title>
+    <base href="/t-control-app/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+</head>
+<body style="background-color: #121412; margin: 0;">
+    <div id="app">
+        <div style="color: #a3c644; text-align: center; padding-top: 40vh; font-family: sans-serif;">
+            Завантаження Т-Контроль...
+        </div>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>

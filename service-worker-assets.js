@@ -1,13 +1,121 @@
 self.assetsManifest = {
-  "version": "waTc1w+9",
+  "version": "daclZPjQ",
   "assets": [
     {
-      "hash": "sha256-AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=",
+      "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=",
-      "url": "Images/placeholder.txt"
+      "hash": "sha256-8iyAKAR3KHUr+iJ0uFwievNLSJAfu1TEwGI6KwwOe6I=",
+      "url": "Images/banner_1.webp"
+    },
+    {
+      "hash": "sha256-G7nDOsvAHBYRrB79ajkBimf36Kv1eUr66P3eimWnWz8=",
+      "url": "Images/banner_2.webp"
+    },
+    {
+      "hash": "sha256-V3LjqMuZ4J785ayVArrHQSVGdEv6tE+JBNvavQVUDao=",
+      "url": "Images/coin_health.webp"
+    },
+    {
+      "hash": "sha256-weY8IUCR+O8KoHgV29X9ZcJ5fR6LG9lQn8sNJrJ0+ro=",
+      "url": "Images/comic_001_golden_window.webp"
+    },
+    {
+      "hash": "sha256-CPxzLg482dpnpcf3JTf56Oi3Q/MX0ISJXjb8u0Aw/cc=",
+      "url": "Images/comic_002_shock_contraindication.webp"
+    },
+    {
+      "hash": "sha256-qKJENpiiBycwILHjhkhvNAFnFAHpwcEc6V+7rPWnNps=",
+      "url": "Images/comic_003_over_six_hours.webp"
+    },
+    {
+      "hash": "sha256-jQjXSTbRZtQVrXsw40OGmgF6hSv/ruQea/Dl5eeWjUY=",
+      "url": "Images/comic_004_venous_tourniquet_pulse.webp"
+    },
+    {
+      "hash": "sha256-Gafnthzl8VuEwsGQ5TYKeqMRb3nUKFsRENcNliwyTy4=",
+      "url": "Images/comic_005_false_tourniquet_abrasion.webp"
+    },
+    {
+      "hash": "sha256-eQLOCzutz+DV78tbL3pHprJglfL9dKS76RwdYSEmh9g=",
+      "url": "Images/comic_006_cuf_return_fire_self_aid.webp"
+    },
+    {
+      "hash": "sha256-f6uql1B1AKLCIm6vSpsOExd2mouuCm8ijkrVtVV287s=",
+      "url": "Images/comic_007_non_massive_bleeding_diff.webp"
+    },
+    {
+      "hash": "sha256-LgY7o/nMeOphVgrwwrJsDJSM//tF4b8eMAccwTaJV3Q=",
+      "url": "Images/comic_008_reposition_over_pocket.webp"
+    },
+    {
+      "hash": "sha256-9tUgzA3G+3zU/OjHbE0R7CVaL040lU8m1y6MM3zFPoY=",
+      "url": "Images/comic_009_side_by_side_second_tourniquet.webp"
+    },
+    {
+      "hash": "sha256-SHBm41u6f6MTFt/Gxp4NyoGfgyLVt/aA33yva6RrATA=",
+      "url": "Images/comic_010_altered_mental_status_weapons.webp"
+    },
+    {
+      "hash": "sha256-yEv7XZOewvHMbXnmtU/RsOWE2vQKJPymIoNdCWYaZzU=",
+      "url": "Images/comic_011_packing_and_3min_pressure.webp"
+    },
+    {
+      "hash": "sha256-LJSdreM/uYacL+YcNkmPNGCfK0sceYEdOlKsGQm0Ywk=",
+      "url": "Images/comic_012_failed_conversion_rebleed.webp"
+    },
+    {
+      "hash": "sha256-blt7eFJQfk24iObFmKcykVrzeA+bvIqivOC9qf7nTlk=",
+      "url": "Images/comic_013_replace_soaked_hemostatic_gauze.webp"
+    },
+    {
+      "hash": "sha256-24yLAv0hybCkP5cxnuk5ab5ZBVs+QcDVugqPvE7qxFc=",
+      "url": "Images/comic_014_xstat_narrow_wound_warning.webp"
+    },
+    {
+      "hash": "sha256-p+NkDZ9AtLBj/pnu7cgtP+u+x2QY5aNyHOLuoFzEK9A=",
+      "url": "Images/comic_015_leave_loosened_tourniquet_ready.webp"
+    },
+    {
+      "hash": "sha256-ZX5eFbIEAzUz2nH6luJlEYLS9+cfVXmpgubBR8ixqAA=",
+      "url": "Images/comic_016_inguinal_junctional_packing.webp"
+    },
+    {
+      "hash": "sha256-kxqJwLftzpS4dqJViMXzx8mP1q9XWlz/dCy6/EYCRPU=",
+      "url": "Images/comic_017_neck_junctional_armpit_wrap.webp"
+    },
+    {
+      "hash": "sha256-NOrH6PFQPcEePGum4uf3PSuM/Vg9qaFtBfGNvTSKiOo=",
+      "url": "Images/comic_018_axillary_junctional_subclavian.webp"
+    },
+    {
+      "hash": "sha256-qDex+H7e5sdzuH2sjT0u09oBE5QXkUozwv4wnlkvtmQ=",
+      "url": "Images/comic_019_improvised_wire_belt_danger.webp"
+    },
+    {
+      "hash": "sha256-pyO6iNPKSfida5abRjz1qyY87p0TFOONpDMD8QWhT3s=",
+      "url": "Images/comic_020_myth_periodic_loosening_warning.webp"
+    },
+    {
+      "hash": "sha256-v4gL2RuImNR7v4inMqQVtVHRQ6Gmj0yBvMexEpjCTHM=",
+      "url": "Images/icon_app_logo.webp"
+    },
+    {
+      "hash": "sha256-4UT4JNzKbpUWOB38zBKnh+nXTgcnVAoCmm5wbI1ZyYk=",
+      "url": "Images/patch_1.webp"
+    },
+    {
+      "hash": "sha256-Zum64bzagnNRxumdOhBiBn2Z5GP/Z2IFcrFtvyIzhCA=",
+      "url": "Images/patch_2.webp"
+    },
+    {
+      "hash": "sha256-NM2oHXvU2DERVvg6zjMiJmbicRoFsgHy7iPik+suBhw=",
+      "url": "Images/patch_3.webp"
+    },
+    {
+      "hash": "sha256-IT6wW3QRZ0vsfXQwag7mxHPSEFhiqx3lVaCLK0DcE5k=",
+      "url": "Images/streak_freeze.webp"
     },
     {
       "hash": "sha256-nSsPrRZHNVrVW9NPuf5FAv3vVqUSt0CbSQDxIPXBob4=",
@@ -126,12 +234,12 @@ self.assetsManifest = {
       "url": "_framework/System.Private.Uri.qdg1f9r29y.wasm"
     },
     {
-      "hash": "sha256-subN4GeRX41RGMetqHoww+/Yr+o/uCpaS9oTrMeKJr0=",
-      "url": "_framework/System.Runtime.InteropServices.JavaScript.ae3uao1vst.wasm"
+      "hash": "sha256-SAc5lQOtd2wB2UCQ2iw5Hu9mrSWlRoqCRo4YJLGrWxs=",
+      "url": "_framework/System.Runtime.8sduidwfk4.wasm"
     },
     {
-      "hash": "sha256-OEaYDnafcuuQzzZW6ympi3RK0IXz9SA/Weu2kyPF+3k=",
-      "url": "_framework/System.Runtime.gm26398t5b.wasm"
+      "hash": "sha256-subN4GeRX41RGMetqHoww+/Yr+o/uCpaS9oTrMeKJr0=",
+      "url": "_framework/System.Runtime.InteropServices.JavaScript.ae3uao1vst.wasm"
     },
     {
       "hash": "sha256-cTpFIxaNUWLXKQa2yGmNxTQNwgdyj7W4RAOSXRdsk50=",
@@ -150,16 +258,12 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.51z6hdr2t3.wasm"
     },
     {
-      "hash": "sha256-gMRB3fiPngeQxOaZoMXF1cFtm9aytutSUgyght2LOKg=",
-      "url": "_framework/TControl.PWA.w80hk36t6h.wasm"
+      "hash": "sha256-d4LqmFKZ7YplAu0ZLl3caaRUTVJHW09jfNKibTWfBP4=",
+      "url": "_framework/TControl.PWA.ngulh51ohf.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
-    },
-    {
-      "hash": "sha256-4egScTU5eexXuNuX9iXgi4yr9uetwAD5+S/A5TbZLzw=",
-      "url": "_framework/dotnet.5f0bqijwbg.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -168,6 +272,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-JTxXd17wbrHKV/375moHFUFc3a/ofVTPPqSTk6KwNj0=",
       "url": "_framework/dotnet.native.rw4kynp763.wasm"
+    },
+    {
+      "hash": "sha256-FBRqrBNNGTQcncNd9IOQXhtDbnE52F8sPNmGiE8bxcw=",
+      "url": "_framework/dotnet.orvprf92cp.js"
     },
     {
       "hash": "sha256-QbnqrZGHtGq7wudS17/AYEPpH9JkphrsyVllD6JHmds=",
@@ -202,7 +310,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-YjhXHiFmYpLIQ4QMRia7QTUU1EgZwknc9Qz9Y9kkS5s=",
+      "hash": "sha256-bK/LK/gJbYQGQ635NZhJki22U5HLh258T6xWZ/QJlDY=",
       "url": "index.html"
     },
     {
