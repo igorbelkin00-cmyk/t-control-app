@@ -1,56 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+@code {
+    private int currentScene = 1;
+    private string currentImage = "Images/comic_001_golden_window.webp";
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TControl.PWA</title>
-    <base href="/t-control-app/" />
-    <link href="_framework/dotnet.ofk3si89iw.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-NG6KtH4d400h0F1up0ePlYGB0ANZyrDd1kNpMKMXawg=" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="TControl.PWA.styles.css" rel="stylesheet" />
-    <link href="manifest.webmanifest" rel="manifest" />
-    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    <script type="importmap">{
-  "imports": {
-    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
-    "./_framework/dotnet.native.js": "./_framework/dotnet.native.b6l13xorvf.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.ofk3si89iw.js",
-    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v06hirbjsv.js"
-  },
-  "scopes": {},
-  "integrity": {
-    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
-    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
-    "./_framework/dotnet.js": "sha256-NG6KtH4d400h0F1up0ePlYGB0ANZyrDd1kNpMKMXawg=",
-    "./_framework/dotnet.native.b6l13xorvf.js": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
-    "./_framework/dotnet.native.js": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
-    "./_framework/dotnet.ofk3si89iw.js": "sha256-NG6KtH4d400h0F1up0ePlYGB0ANZyrDd1kNpMKMXawg=",
-    "./_framework/dotnet.runtime.js": "sha256-QbnqrZGHtGq7wudS17/AYEPpH9JkphrsyVllD6JHmds=",
-    "./_framework/dotnet.runtime.v06hirbjsv.js": "sha256-QbnqrZGHtGq7wudS17/AYEPpH9JkphrsyVllD6JHmds="
-  }
-}</script>
-</head>
-
-<body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
-    </div>
-    <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
-</body>
-
-</html>
+    private void NextScene()
+    {
+        currentScene++;
+        if (currentScene == 2) {
+            currentImage = "Images/comic_002_shock_contraindication.webp";
+        }
+        else if (currentScene == 3) {
+            currentImage = "Images/comic_003_over_six_hours.webp";
+        }
+        else {
+            currentScene = 1; 
+            currentImage = "Images/comic_001_golden_window.webp"; 
+        }
+    }
+}
