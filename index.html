@@ -16,7 +16,7 @@
         <p id="sceneText" style="color: #8f998f; font-size: 14px; margin-bottom: 20px;">Клінічна сцена 1</p>
 
         <div style="background: #2A3419; padding: 10px; border-radius: 12px; margin-bottom: 25px; max-width: 400px; margin-left: auto; margin-right: auto;">
-            <img id="sceneImage" src="Images/comic_001_golden_window.webp" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Сцена" />
+            <img id="sceneImage" src="" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" alt="Сцена" />
         </div>
 
         <p style="font-size: 18px; font-weight: bold; margin-bottom: 20px; color: #e0e4e0;">Що робимо з турнікетом?</p>
@@ -31,26 +31,70 @@
         </div>
     </div>
 
-    <!-- Вбудований легкий "двигун" JavaScript замість C# -->
     <script>
-        let currentScene = 1;
+        // Динамічний масив усіх сцен, які реально існують у папці Images
+        const scenes = [
+            "Images/comic_001_golden_window.webp",
+            "Images/comic_002_shock_contraindication.webp",
+            "Images/comic_003_over_six_hours.webp",
+            "Images/comic_004_venous_tourniquet_pulse.webp",
+            "Images/comic_005_false_tourniquet_abrasion.webp",
+            "Images/comic_006_cuf_return_fire_self_aid.webp",
+            "Images/comic_007_non_massive_bleeding_diff.webp",
+            "Images/comic_008_reposition_over_pocket.webp",
+            "Images/comic_009_side_by_side_second_tourniquet.webp",
+            "Images/comic_010_altered_mental_status_weapons.webp",
+            "Images/comic_011_packing_and_3min_pressure.webp",
+            "Images/comic_012_failed_conversion_rebleed.webp",
+            "Images/comic_013_replace_soaked_hemostatic_gauze.webp",
+            "Images/comic_014_xstat_narrow_wound_warning.webp",
+            "Images/comic_015_leave_loosened_tourniquet_ready.webp",
+            "Images/comic_016_inguinal_junctional_packing.webp",
+            "Images/comic_017_neck_junctional_armpit_wrap.webp",
+            "Images/comic_018_axillary_junctional_subclavian.webp",
+            "Images/comic_019_improvised_wire_belt_danger.webp",
+            "Images/comic_020_myth_periodic_loosening_warning.webp",
+        ];
+        
+        let currentIndex = 0;
+        
+        // Встановлюємо першу картинку при завантаженні (якщо файли є)
+        if (scenes.length > 0) {
+            document.getElementById("sceneImage").src = scenes[0];
+        }
+
         function nextScene() {
-            currentScene++;
-            let imgSource = "Images/comic_001_golden_window.webp";
+            if (scenes.length === 0) return;
             
-            if (currentScene === 2) {
-                imgSource = "Images/comic_002_shock_contraindication.webp";
-            } else if (currentScene === 3) {
-                imgSource = "Images/comic_003_over_six_hours.webp";
-            } else if (currentScene === 4) {
-                imgSource = "Images/comic_004_venous_tourniquet.webp";
-            } else {
-                currentScene = 1;
+            currentIndex++;
+            // Якщо дійшли до останньої картинки — починаємо з початку
+            if (currentIndex >= scenes.length) {
+                currentIndex = 0;
             }
             
-            document.getElementById("sceneText").innerText = "Клінічна сцена " + currentScene;
-            document.getElementById("sceneImage").src = imgSource;
+            document.getElementById("sceneText").innerText = "Клінічна сцена " + (currentIndex + 1);
+            document.getElementById("sceneImage").src = scenes[currentIndex];
         }
     </script>
 </body>
 </html>
+            "Images/comic_001_golden_window.webp",
+            "Images/comic_002_shock_contraindication.webp",
+            "Images/comic_003_over_six_hours.webp",
+            "Images/comic_004_venous_tourniquet_pulse.webp",
+            "Images/comic_005_false_tourniquet_abrasion.webp",
+            "Images/comic_006_cuf_return_fire_self_aid.webp",
+            "Images/comic_007_non_massive_bleeding_diff.webp",
+            "Images/comic_008_reposition_over_pocket.webp",
+            "Images/comic_009_side_by_side_second_tourniquet.webp",
+            "Images/comic_010_altered_mental_status_weapons.webp",
+            "Images/comic_011_packing_and_3min_pressure.webp",
+            "Images/comic_012_failed_conversion_rebleed.webp",
+            "Images/comic_013_replace_soaked_hemostatic_gauze.webp",
+            "Images/comic_014_xstat_narrow_wound_warning.webp",
+            "Images/comic_015_leave_loosened_tourniquet_ready.webp",
+            "Images/comic_016_inguinal_junctional_packing.webp",
+            "Images/comic_017_neck_junctional_armpit_wrap.webp",
+            "Images/comic_018_axillary_junctional_subclavian.webp",
+            "Images/comic_019_improvised_wire_belt_danger.webp",
+            "Images/comic_020_myth_periodic_loosening_warning.webp",
