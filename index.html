@@ -98,3 +98,27 @@
             "Images/comic_018_axillary_junctional_subclavian.webp",
             "Images/comic_019_improvised_wire_belt_danger.webp",
             "Images/comic_020_myth_periodic_loosening_warning.webp",
+        ];
+        
+        let currentIndex = 0;
+        
+        // Встановлюємо першу картинку при завантаженні (якщо файли є)
+        if (scenes.length > 0) {
+            document.getElementById("sceneImage").src = scenes[0];
+        }
+
+        function nextScene() {
+            if (scenes.length === 0) return;
+            
+            currentIndex++;
+            // Якщо дійшли до останньої картинки — починаємо з початку
+            if (currentIndex >= scenes.length) {
+                currentIndex = 0;
+            }
+            
+            document.getElementById("sceneText").innerText = "Клінічна сцена " + (currentIndex + 1);
+            document.getElementById("sceneImage").src = scenes[currentIndex];
+        }
+    </script>
+</body>
+</html>
